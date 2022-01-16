@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <import resource="container-dependency-lookup.xml"/>
+
+<!--    <bean id="userReposiry" class="spring.ioc.overview.dependency.repository.UserRepository">-->
+<!--        &lt;!&ndash; 手动配置&ndash;&gt;-->
+<!--        <property name="users">-->
+<!--            <util:list>-->
+<!--                <ref bean="user"/>-->
+<!--                <ref bean="superuser"/>-->
+<!--            </util:list>-->
+<!--        </property>-->
+<!--    </bean>-->
+    <!--自动注入-->
+    <bean id="userReposiry" class="spring.ioc.overview.dependency.repository.UserRepository" autowire="byType" />
+
+</beans>
