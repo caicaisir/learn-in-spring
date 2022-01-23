@@ -12,6 +12,7 @@
 
     <modules>
         <module>spring-container-overview</module>
+        <module>spring-bean</module>
     </modules>
 
     <properties>
