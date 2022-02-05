@@ -28,6 +28,7 @@ public class AnnotationBeanDefinitionDemo {
         System.out.println(applicationContext.getBeansOfType(User.class));
         //关闭上下文
         applicationContext.close();
+
     }
 
     private static void beanDefinitionRegistryWithName(BeanDefinitionRegistry registry, String name) {
