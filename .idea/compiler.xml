@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-bean" />
+        <module name="dependency-injection" />
         <module name="spring-container-overview" />
         <module name="dependency-lookup" />
-        <module name="spring-bean" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dependency-injection" target="8" />
       <module name="dependency-lookup" target="8" />
       <module name="ioc-container-overview" target="1.8" />
       <module name="learn-in-spring" target="1.5" />
